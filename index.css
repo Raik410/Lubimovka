@@ -1,8 +1,7 @@
-.box {
-  width: 200px;
-  height: 200px;
-  background-color: red;
-}
-.box:hover {
-  background-color: green;
+@import './vendor/font/stylesheet.css';
+.body {
+  margin: 0 auto;
+  font-family: "Formular";
+  background-color: #ECEBE8;
+  max-width: 1440px;
 }/*# sourceMappingURL=index.css.map */
