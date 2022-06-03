@@ -4,4 +4,68 @@
   font-family: "Formular";
   background-color: #ECEBE8;
   max-width: 1440px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #242424;
+}
+.header__logo {
+  margin-top: 15px;
+  margin-bottom: 11px;
+  margin-left: 30px;
+  margin-right: 25px;
+}
+.header__about {
+  display: flex;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 20px;
+  gap: 44px;
+}
+.header__about-text {
+  list-style-type: none;
+  font-family: "Formular";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+}
+.header__links {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 20px;
+  gap: 16px;
+}
+.header__nav {
+  border-right: 1px solid #242424;
+  border-left: 1px solid #242424;
+  padding-left: 24px;
+  padding-right: 26px;
+}
+.header__link {
+  font-family: "Formular";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+}
+.header__button {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.header__button-text {
+  margin: 0;
+  font-family: "Formular";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
 }/*# sourceMappingURL=index.css.map */
