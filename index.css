@@ -1,77 +1,107 @@
-@import './vendor/font/stylesheet.css';
+@import url(/Users/mac/dev/Lubimovka/vendor/font/stylesheet.css);
 .body {
   margin: 0 auto;
-  font-family: "Formular";
+  font-family: 'Formular';
   background-color: #ECEBE8;
   max-width: 1440px;
+  color: #242424;
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .header__logo {
   margin-top: 15px;
   margin-bottom: 11px;
   margin-left: 30px;
   margin-right: 25px;
 }
+
 .header__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-decoration: none;
   padding: 0;
   margin: 0;
   padding-top: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-  -moz-column-gap: 44px;
-       column-gap: 44px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 44px;
+          column-gap: 44px;
   row-gap: 20px;
 }
+
 .header__about-text {
   list-style-type: none;
-  font-family: "Formular";
+  font-family: 'Formular';
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
 }
+
 .header__about-text-link {
   color: black;
   text-decoration: none;
 }
+
 .header__about-text:last-child {
   margin-right: 0;
 }
+
 .header__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   list-style-type: none;
   padding: 0;
   margin: 0;
   padding-top: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-  -moz-column-gap: 16px;
-       column-gap: 16px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 16px;
+          column-gap: 16px;
   row-gap: 20px;
 }
+
 .header__nav {
   border-right: 1px solid #242424;
   border-left: 1px solid #242424;
   padding-left: 24px;
   padding-right: 26px;
 }
+
 .header__link {
-  font-family: "Formular";
+  font-family: 'Formular';
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 18px;
 }
+
 .header__link-text {
-  font-family: "Formular";
+  font-family: 'Formular';
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -79,17 +109,24 @@
   text-decoration: none;
   color: black;
 }
+
 .header__link:last-child {
   margin-right: 0;
 }
+
 .header__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 20px;
 }
+
 .header__button-text {
   margin: 0;
-  font-family: "Formular";
+  font-family: 'Formular';
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -99,11 +136,13 @@
   cursor: pointer;
   padding: 0;
 }
+
 .header__project {
   margin-left: 40px;
   margin-top: 42px;
   background-color: transparent;
 }
+
 .header__project-button {
   border: none;
   border-right: 1px solid #242424;
@@ -117,11 +156,17 @@
   padding-left: 7px;
   background-color: transparent;
 }
+
 .header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border-bottom: 1px solid #242424;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 @media screen and (max-width: 1330px) {
   .header__about {
     padding-bottom: 10px;
@@ -130,6 +175,7 @@
     padding-bottom: 10px;
   }
 }
+
 @media screen and (max-width: 901px) {
   .header__about {
     display: none;
@@ -143,12 +189,21 @@
   }
   .header__container {
     border: none;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .header {
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .header__nav {
     border: none;
@@ -157,4 +212,157 @@
   .header__button {
     display: none;
   }
-}/*# sourceMappingURL=index.css.map */
+}
+
+.play {
+  padding: 68px 30px 144px 182px;
+  font-family: 'Formular';
+  font-style: normal;
+  font-weight: 300;
+}
+
+.play li {
+  list-style-type: none;
+}
+
+.play__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.play__info {
+  max-width: 420px;
+}
+
+.play__title {
+  font-family: 'Neue Machina';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.play__autors {
+  margin: 0;
+  padding: 0;
+}
+
+.play__position {
+  margin: 20px 0 0 0;
+  font-size: 16px;
+  line-height: 1.38;
+}
+
+.play__position-name {
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  -webkit-font-feature-settings: 'ss01' on;
+          font-feature-settings: 'ss01' on;
+  margin: 4px 0;
+  padding-left: 28px;
+}
+
+.play__about {
+  max-width: 691px;
+}
+
+.play__video {
+  width: 691px;
+  height: 389px;
+  background-color: burlywood;
+  margin-bottom: 66px;
+}
+
+.play__description {
+  max-width: 602px;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+.play__description-part {
+  margin: 0 0 28px 0;
+}
+
+.play__description-part:last-of-type {
+  margin: 0;
+}
+
+.play__ticket {
+  width: 240px;
+}
+
+.play__ticket-info {
+  background-color: #B7C09D;
+  min-height: 300px;
+}
+
+.play__ticket-title {
+  padding: 24px 31px 136px 24px;
+  font-family: 'Neue Machina';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin: 80px 0 0 0;
+}
+
+.play__btn {
+  width: 100%;
+  background-color: #B7C09D;
+  padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  border-top: #242424 1px solid;
+}
+
+.play__btn-title {
+  font-size: 16px;
+  line-height: 1.38;
+  margin: 0;
+  text-align: start;
+}
+
+.play__btn-up {
+  background-image: url("./image/icon/arrow-45.svg");
+  width: 25px;
+  height: 25px;
+  display: inline;
+}
+
+.play__btn-down {
+  background-image: url("./image/icon/arrow-down.svg");
+  width: 25px;
+  height: 25px;
+}
+
+.play__ticket-name {
+  font-family: 'Neue Machina';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.play__ticket-city {
+  font-size: 16px;
+  line-height: 1.38;
+}
+/*# sourceMappingURL=index.css.map */
