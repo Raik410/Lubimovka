@@ -289,10 +289,15 @@
 
 .play__description-part {
   margin: 0 0 28px 0;
+  text-indent: 60px;
 }
 
 .play__description-part:last-of-type {
   margin: 0;
+}
+
+.play__description-part:first-of-type {
+  text-indent: 0;
 }
 
 .play__ticket {
@@ -330,6 +335,22 @@
           align-items: center;
   border: none;
   border-top: #242424 1px solid;
+  font-family: 'Formular';
+  font-style: normal;
+  font-weight: 300;
+}
+
+.play__btn:hover {
+  background-color: #242424;
+  color: #fff;
+}
+
+.play__btn:hover .play__btn-up {
+  background-image: url("./image/icon/arrow-45-white.svg");
+}
+
+.play__btn:hover .play__btn-down {
+  background-image: url("./image/icon/arrow-down-white.svg");
 }
 
 .play__btn-title {
@@ -359,10 +380,12 @@
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.01em;
+  margin: 17px 0 0 0;
 }
 
 .play__ticket-city {
   font-size: 16px;
   line-height: 1.38;
+  margin: 4px 0 0 0;
 }
 /*# sourceMappingURL=index.css.map */

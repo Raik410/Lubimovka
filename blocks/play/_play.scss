@@ -67,11 +67,16 @@
 
   &__description-part {
     margin: 0 0 28px 0;
+    text-indent: 60px;
   }
 
- &__description-part:last-of-type {
+  &__description-part:last-of-type {
       margin: 0;
     }
+
+  &__description-part:first-of-type {
+    text-indent: 0;
+  }
 
   &__ticket {
     width: 240px;
@@ -102,7 +107,26 @@
     align-items: center;
     border: none;
     border-top: #242424 1px solid;
+    font-family: 'Formular';
+    font-style: normal;
+    font-weight: 300;
   }
+
+  &__btn:hover {
+    background-color: #242424;
+    color: #fff;
+
+  
+  }
+
+  &__btn:hover &__btn-up {
+      background-image: url('./image/icon/arrow-45-white.svg');
+  }
+
+
+    &__btn:hover &__btn-down {
+      background-image: url('./image/icon/arrow-down-white.svg');
+    }
 
   &__btn-title {
     font-size: 16px;
@@ -131,11 +155,13 @@
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: -0.01em;
+    margin: 17px 0 0 0;
   }
 
   &__ticket-city {
     font-size: 16px;
     line-height: 1.38;
+    margin: 4px 0 0 0;
   }
 
 
