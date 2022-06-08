@@ -1,8 +1,8 @@
 .play {
   padding: 68px 30px 144px 182px;
-  font-family: 'Formular';
-    font-style: normal;
-    font-weight: 300;
+  font-family: "Formular";
+  font-style: normal;
+  font-weight: 300;
 
   li {
     list-style-type: none;
@@ -13,10 +13,8 @@
     justify-content: space-between;
   }
 
- 
-
   &__title {
-    font-family: 'Neue Machina';
+    font-family: "Neue Machina";
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
@@ -41,25 +39,21 @@
     font-size: 20px;
     line-height: 1.4;
     letter-spacing: -0.01em;
-    font-feature-settings: 'ss01' on;
+    font-feature-settings: "ss01" on;
     margin: 4px 0;
     padding-left: 28px;
   }
 
-  &__about {
-    max-width: 691px;
-  }
-
   &__video {
     margin-bottom: 66px;
-    background-color: #ECEBE8;
+    background-color: #ecebe8;
   }
 
   &__description {
     max-width: 602px;
     font-size: 20px;
-      line-height: 1.4;
-      letter-spacing: -0.01em;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
   }
 
   &__description-part {
@@ -68,8 +62,8 @@
   }
 
   &__description-part:last-of-type {
-      margin: 0;
-    }
+    margin: 0;
+  }
 
   &__description-part:first-of-type {
     text-indent: 0;
@@ -80,13 +74,13 @@
   }
 
   &__ticket-info {
-    background-color: #B7C09D;
+    background-color: #b7c09d;
     min-height: 300px;
   }
 
   &__ticket-title {
     padding: 24px 31px 136px 24px;
-    font-family: 'Neue Machina';
+    font-family: "Neue Machina";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -97,14 +91,14 @@
 
   &__btn {
     width: 100%;
-    background-color: #B7C09D;
+    background-color: #b7c09d;
     padding: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border: none;
     border-top: #242424 1px solid;
-    font-family: 'Formular';
+    font-family: "Formular";
     font-style: normal;
     font-weight: 300;
   }
@@ -112,18 +106,15 @@
   &__btn:hover {
     background-color: #242424;
     color: #fff;
-
-  
   }
 
   &__btn:hover &__btn-up {
-      background-image: url('./image/icon/arrow-45-white.svg');
+    background-image: url("./image/icon/arrow-45-white.svg");
   }
 
-
-    &__btn:hover &__btn-down {
-      background-image: url('./image/icon/arrow-down-white.svg');
-    }
+  &__btn:hover &__btn-down {
+    background-image: url("./image/icon/arrow-down-white.svg");
+  }
 
   &__btn-title {
     font-size: 16px;
@@ -133,20 +124,20 @@
   }
 
   &__btn-up {
-    background-image: url('./image/icon/arrow-45.svg');
+    background-image: url("./image/icon/arrow-45.svg");
     width: 25px;
     height: 25px;
     display: inline;
   }
 
   &__btn-down {
-    background-image: url('./image/icon/arrow-down.svg');
+    background-image: url("./image/icon/arrow-down.svg");
     width: 25px;
     height: 25px;
   }
 
   &__ticket-name {
-    font-family: 'Neue Machina';
+    font-family: "Neue Machina";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -161,22 +152,53 @@
     margin: 4px 0 0 0;
   }
 
-  @media screen and (max-width: 1100px){
-
+  @media screen and (max-width: 1100px) {
     &__container {
       flex-direction: column;
       width: 100%;
     }
 
     &__info {
-      min-height: 634px;
+      min-height: 576px;
       width: 100%;
       background-color: #fff;
+      padding: 58px 20px 0 27px;
     }
 
+    &__autors {
+      max-width: 337px;
+    }
 
+    &__video {
+      position: absolute;
+      width: 100%;
+      margin: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+    }
+
+    &__video-container {
+      position: relative;
+      padding-top: 56%;
+
+      &:before {
+        display: block;
+        content: "";
+        width: 100%;
+      }
+    }
+
+    &__about {
+      padding: 24px;
+    }
+
+    &__description {
+      margin-top: 24px;
+    }
   }
-
 }
 
 @media screen and (max-width: 1100px) {
