@@ -13,9 +13,7 @@
     justify-content: space-between;
   }
 
-  &__info {
-    max-width: 420px;
-  }
+ 
 
   &__title {
     font-family: 'Neue Machina';
@@ -30,6 +28,7 @@
   &__autors {
     margin: 0;
     padding: 0;
+    max-width: 420px;
   }
 
   &__position {
@@ -53,6 +52,7 @@
 
   &__video {
     margin-bottom: 66px;
+    background-color: #ECEBE8;
   }
 
   &__description {
@@ -161,5 +161,26 @@
     margin: 4px 0 0 0;
   }
 
+  @media screen and (max-width: 1100px){
 
+    &__container {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    &__info {
+      min-height: 634px;
+      width: 100%;
+      background-color: #fff;
+    }
+
+
+  }
+
+}
+
+@media screen and (max-width: 1100px) {
+  .play {
+    padding: 0;
+  }
 }
