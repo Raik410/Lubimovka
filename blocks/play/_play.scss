@@ -152,6 +152,12 @@
     margin: 4px 0 0 0;
   }
 
+  @media screen and (max-width: 1300px) {
+    &__autors {
+      width: 314px;
+    }
+  }
+
   @media screen and (max-width: 1100px) {
     &__container {
       flex-direction: column;
@@ -198,6 +204,19 @@
     &__description {
       margin-top: 24px;
     }
+
+    &__ticket {
+      margin: 0 auto;
+    }
+    &__description {
+      margin: 24px auto 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .play {
+    padding-left: 46px;
   }
 }
 

@@ -380,6 +380,12 @@
   margin: 4px 0 0 0;
 }
 
+@media screen and (max-width: 1300px) {
+  .play__autors {
+    width: 314px;
+  }
+}
+
 @media screen and (max-width: 1100px) {
   .play__container {
     -webkit-box-orient: vertical;
@@ -421,6 +427,18 @@
   }
   .play__description {
     margin-top: 24px;
+  }
+  .play__ticket {
+    margin: 0 auto;
+  }
+  .play__description {
+    margin: 24px auto 0;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .play {
+    padding-left: 46px;
   }
 }
 
