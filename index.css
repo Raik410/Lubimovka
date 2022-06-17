@@ -1,4 +1,4 @@
-@import url(/Users/mac/dev/Lubimovka/vendor/font/stylesheet.css);
+@import url(c:\Users\lokom\Desktop\praktikum\Lubimovka\vendor\font\stylesheet.css);
 .body {
   margin: 0 auto;
   font-family: 'Formular';
@@ -448,34 +448,50 @@
   }
 }
 
-/*# sourceMappingURL=index.css.map */
 .slider-reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 1260px;
   overflow: hidden;
   margin: 0 auto;
 }
+
 .slider-reviews__track {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  transition: 0.2s;
-  box-sizing: border-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-transition: .2s;
+  transition: .2s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 .slider-reviews__container {
   overflow: hidden;
 }
+
 .slider-reviews__title {
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
 }
+
 .slider-reviews__item-text {
   font-weight: 300;
   font-size: 20px;
   margin: 0;
   line-height: 28px;
 }
+
 .slider-reviews__item-subtext {
   font-weight: 400;
   font-size: 20px;
@@ -484,6 +500,7 @@
   padding-bottom: 24px;
   padding-top: 50px;
 }
+
 .slider-reviews__btn-next {
   width: 50px;
   height: 50px;
@@ -493,12 +510,15 @@
   cursor: pointer;
   margin-left: 20px;
 }
+
 .slider-reviews__btn-next:disabled {
   opacity: 0.5;
 }
+
 .slider-reviews__btn-back:disabled {
   opacity: 0.5;
 }
+
 .slider-reviews__btn-back {
   width: 50px;
   height: 50px;
@@ -508,18 +528,117 @@
   cursor: pointer;
   margin-left: 130px;
 }
+
 .slider-reviews-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .slider-reviews__item {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 33px 30px 0 30px;
   border-right: solid 25px #ECEBE8;
+}
+
+.from-scholl {
+  padding: 30px 0 0 120px;
+  font-family: "Formular";
+  font-style: normal;
+  font-weight: 300;
+}
+
+.from-scholl__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.from-scholl__about {
+  margin-top: 62px;
+}
+
+.from-scholl__title {
+  width: 540px;
+  font-family: "Neue Machina";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 70px;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.from-scholl__subtitle {
+  width: 418px;
+  font-family: "Neue Machina";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  vertical-align: top;
+  margin: 37px auto 212px;
+}
+
+.from-scholl__data {
+  width: 418px;
+  font-family: "Neue Machina";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  vertical-align: top;
+  margin: 0 0 16px;
+}
+
+.from-scholl__button {
+  width: 240px;
+  height: 56px;
+  border: 1px solid #000000;
+  padding: 0;
+  font-family: "Formular";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.from-scholl__span {
+  margin-left: 115px;
+}
+
+.from-scholl__text {
+  width: 591px;
+  font-family: "Neue Machina";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  vertical-align: top;
+  margin-top: 48px;
 }
 /*# sourceMappingURL=index.css.map */
